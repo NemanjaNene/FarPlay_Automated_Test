@@ -13,6 +13,7 @@
     "test:faq": "cypress run --spec 'cypress/e2e/TC4-FAQ.spec.js'",
     "test:profile": "cypress run --spec 'cypress/e2e/TC5-UserProfile.spec.js'",
     "test:payment": "cypress run --spec 'cypress/e2e/TC6-PaymentMethod.spec.js'",
+    "test:signup": "cypress run --spec 'cypress/e2e/TC7-SignUp.spec.js'",
     "cy:open": "cypress open"
   },
   "repository": {
