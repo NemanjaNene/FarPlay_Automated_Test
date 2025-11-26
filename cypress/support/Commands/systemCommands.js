@@ -5,5 +5,8 @@ Cypress.Commands.add('systemLogin', () => {
         password: 'Fair2025Play!&M0bile8ee&!'
       }
     });
+    cy.wait(2000);
+    cy.reload();
+    cy.wait(1500);
   });
   
