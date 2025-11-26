@@ -1,0 +1,33 @@
+{
+  "name": "fairplay-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:headed": "cypress run --headed",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:login": "cypress run --spec 'cypress/e2e/TC1-Login.spec.js'",
+    "test:homepage": "cypress run --spec 'cypress/e2e/TC2-HomePage.spec.js'",
+    "test:footer": "cypress run --spec 'cypress/e2e/TC3-Footer.spec.js'",
+    "test:faq": "cypress run --spec 'cypress/e2e/TC4-FAQ.spec.js'",
+    "test:profile": "cypress run --spec 'cypress/e2e/TC5-UserProfile.spec.js'",
+    "test:payment": "cypress run --spec 'cypress/e2e/TC6-PaymentMethod.spec.js'",
+    "cy:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NemanjaNene/fairplay-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NemanjaNene/fairplay-tests/issues"
+  },
+  "homepage": "https://github.com/NemanjaNene/fairplay-tests#readme",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.3.3"
+  }
+}
