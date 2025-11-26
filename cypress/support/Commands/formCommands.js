@@ -1,10 +1,7 @@
 Cypress.Commands.add('fillOutForm', () => {
 
-  cy.get('button:contains("SHOP UNLIMITED")')
-    .eq(2) 
-    .scrollIntoView()
-    .should('be.visible')
-    .click();
+  cy.get('button').contains('SHOP UNLIMITED').first().scrollIntoView().click({ force: true });
+  cy.wait(1000);
 
   cy.contains('label', 'First name').parent().find('input').type('Nemanja');
   cy.contains('label', 'Last name').parent().find('input').type('Nikitovic');

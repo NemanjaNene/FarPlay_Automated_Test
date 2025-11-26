@@ -52,7 +52,7 @@ describe('TC2 - HomePage - FairPlay', () => {
     cy.visit('https://frontend.dev.fairplay-mobile.com/', {
       auth: {
         username: 'Alois',
-        password: 'Fair2025Play'
+        password: 'Fair2025Play!&M0bile8ee&!'
       }
     }).then(() => {
       const loadTime = Date.now() - startTime;
@@ -101,7 +101,7 @@ describe('TC2 - HomePage - FairPlay', () => {
     cy.visit('https://frontend.dev.fairplay-mobile.com/', {
       auth: {
         username: 'Alois',
-        password: 'Fair2025Play'
+        password: 'Fair2025Play!&M0bile8ee&!'
       },
       onBeforeLoad(win) {
         cy.stub(win.console, 'error').as('consoleError');

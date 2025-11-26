@@ -3,7 +3,7 @@ describe('TC6 - Payment Method - FairPlay', () => {
   beforeEach(() => {
     cy.viewport(1400, 900);
     cy.systemLogin();
-    cy.userLogin('kaceysilver@dcpa.net', 'Testiranje1!');
+    cy.userLogin('nemanjanikitovic1+432@gmail.com', 'Testiranje1!');
   });
 
   it('TC6.1 - Should access payment methods section', () => {
